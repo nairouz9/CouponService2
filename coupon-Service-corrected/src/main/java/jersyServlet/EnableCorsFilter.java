@@ -35,7 +35,7 @@ public class EnableCorsFilter implements ContainerResponseFilter {
 
 	@Override
 	public void filter(ContainerRequestContext request, ContainerResponseContext response) throws IOException {
-		System.out.println("eldar cors filter");
+		System.out.println("niroz cors filter");
 		response.getHeaders().add("Access-Control-Allow-Origin", "http://localhost:4200"); // or "*"
 		response.getHeaders().add("Access-Control-Allow-Headers", "origin, content-type, accept, authorization");
 		response.getHeaders().add("Access-Control-Allow-Credentials", "true");
